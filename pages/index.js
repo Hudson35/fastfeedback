@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Button, Heading, Text, Code } from "@chakra-ui/core";
+import { Button, Heading, Text, Code, Icon } from "@chakra-ui/core";
 
 import { useAuth } from '@/lib/auth'
 import styles from '../styles/Home.module.css'
@@ -16,7 +16,7 @@ export default function Home() {
 
       <main >
         <Heading>Fast Feedback</Heading>
-
+        <Icon name="logo" />
         <Text>
           Current user: <Code >{auth.user ? auth.user.email : 'None'}</Code>
         </Text>
