@@ -1,0 +1,19 @@
+/* Absolute Imports and Aliases
+    -If you're working on a large project, some of your 'import' statements
+    might suffer form the '../../../' spaghetti
+    -In such cases, instead of relative imports, we might want
+    to use absolute imports. Assuming that the 'components' directory exists at teh root,
+    we might want 'import' statements to look like:
+    
+        import Button from 'components/button'
+*/
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/components/*": ["components/*"],
+            "@/lib/*": ["lib/*"],
+            "@/styles/*": ["styles/*"],
+        }
+    }
+}
